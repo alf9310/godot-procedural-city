@@ -1,6 +1,6 @@
 By Julian Heuser (jeh8035) & Audrey Fuller (alf9310@rit.edu)
 
-![Temp](./media/temp.png?raw=true "Temp") 
+![Temp](./media/final_city_moving_day.mp4?raw=true "Temp") 
 
 ## Moving to Raymarching
 
