@@ -1,5 +1,3 @@
-# Godot Procedural City
-**Procedural City Generation Done Though Raymarching, Entirely on the GPU**
 By Julian Heuser (jeh8035) & Audrey Fuller (alf9310@rit.edu)
 
 ![Temp](./media/temp.png?raw=true "Temp") 
