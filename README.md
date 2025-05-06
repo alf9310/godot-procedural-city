@@ -1,6 +1,7 @@
 By Julian Heuser (jeh8035) & Audrey Fuller (alf9310@rit.edu)
 
 [![Video](./media/city_day.png)](https://www.youtube.com/watch?v=HOItbA29LjM)
+Click for video!
 
 ## Moving to Raymarching
 
@@ -16,9 +17,24 @@ There are two components to this that each of use focused on for this project: *
 
 ## City Layout
 
+![Temp](./media/final_city_grid.gif?raw=true "Temp") 
+
+The city layout code uses two different random noise types
+- **Voronoi Noise Cells**: Main city blocks 
+- **Tile Splitting**: Inner roads, uses a simple hashing function
+
 ![Temp](./media/image5.png?raw=true "Temp") 
 
-I'll add stuff here! 
+Each building tile within a block is assigned a height based on its coordinates (unique building and voronoi cell ids). 
+
+![Temp](./media/city_block_noise.png?raw=true "Temp") 
+
+Each time the city generation function is called by the raymarching loop, it calculates the signed distance field from the current 3D point to the nearest geometry (road, building or sidewalk). This determine how far the ray will step in it's next itteration. 
+
+![Temp](./media/flat_buildings.png?raw=true "Temp") 
+
+If the distance becomes small enough, a hit is recorded and the type of geometry is used to determine the material!
+
 
 ## Building Material
 
