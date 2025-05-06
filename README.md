@@ -62,6 +62,13 @@ For even more variety, there’s an added outer building texture that’s also r
 
 ![Temp](./media/image7.png?raw=true "Temp") 
 
+## Future Work
+
+- More realistic city height mapping
+- Ground and building roof textures
+- Lighting
+- Geometry other than buildings (cars, parks, rivers, ect.)
+
 ## Resources
 
 Sites and tools that helped us with this project!
