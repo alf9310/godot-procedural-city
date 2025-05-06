@@ -2,6 +2,8 @@ By Julian Heuser (jeh8035) & Audrey Fuller (alf9310@rit.edu)
 
 ![Temp](./media/final_city_moving_day.mp4?raw=true "Temp") 
 
+[![Video](https://img.youtube.com/viHOItbA29LjM/0.jpg)](https://www.youtube.com/watch?v=HOItbA29LjM)
+
 ## Moving to Raymarching
 
 Initially the city generation looked like this:
