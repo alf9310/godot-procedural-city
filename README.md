@@ -29,7 +29,7 @@ Each building tile within a block is assigned a height based on its coordinates 
 
 ![Temp](./media/city_block_noise.png?raw=true "Temp") 
 
-Each time the city generation function is called by the raymarching loop, it calculates the signed distance field from the current 3D point to the nearest geometry (road, building or sidewalk). This determine how far the ray will step in it's next itteration. 
+Each time the city generation function is called by the raymarching loop, it calculates the distance from the current 3D point to the nearest geometry (road, building or sidewalk). This determine how far the ray will step in it's next itteration. 
 
 ![Temp](./media/flat_buildings.png?raw=true "Temp") 
 
@@ -60,11 +60,21 @@ To set the randomized texture, we offset the horizontal UV based on the random h
 
 For even more variety, there’s an added outer building texture that’s also randomized. However, this would look odd if it was different per window. So we pass in the building ID calculated earlier, and use that as the random value, giving us building variety.
 
-![Temp](./media/image7.png?raw=true "Temp") 
+![Temp](./media/image7.png?raw=true "Temp")
+
+Lasty, a random tint is added to the room, giving the effect of different lights being turned on and off.
+
+![Temp](./media/image9.png?raw=true "Temp")
 
 ## Future Work
 
+The main area for future work is to correct the warping caused by the distance field being slightly inaccurate. To correct for this, we decreased the ray travel distance and increased the iteration count, but this comes at the cost of performance.
+
+Other areas for expansion include:
 - More realistic city height mapping
+- Using more city generation info for texturing
+  - Use the direction of the building to determine the direction of rooms
+  - Changing building textures based on "district"
 - Ground and building roof textures
 - Lighting
 - Geometry other than buildings (cars, parks, rivers, ect.)
